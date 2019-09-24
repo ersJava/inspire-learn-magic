@@ -1,0 +1,44 @@
+package com.company.InspireLearnMagic.controller;
+
+import org.springframework.hateoas.VndErrors;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.validation.BindingResult;
+import org.springframework.validation.FieldError;
+import org.springframework.web.bind.MethodArgumentNotValidException;
+import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseStatus;
+import org.springframework.web.bind.annotation.RestControllerAdvice;
+import org.springframework.web.context.request.WebRequest;
+
+import java.util.ArrayList;
+import java.util.List;
+
+@RestControllerAdvice
+@RequestMapping(produces = "application/vnd.error.json")
+public class Magic8BallExceptionHandler {
+
+    @ExceptionHandler(value = {MethodArgumentNotValidException.class})
+    @ResponseStatus(value = HttpStatus.UNPROCESSABLE_ENTITY)
+    public ResponseEntity<VndErrors> questionValidationError (MethodArgumentNotValidException e,
+                                                              WebRequest request) {
+
+        BindingResult result = e.getBindingResult();
+
+        // don't need a List for one field
+        List<FieldError> fieldErrors = result.getFieldErrors();
+        List<VndErrors.VndError> vndErrorList = new ArrayList<>();
+
+        // no sense for a for loop with one thing to iterate over...
+        for (FieldError fieldError : fieldErrors) {
+            VndErrors.VndError vndError = new VndErrors.VndError(request.toString(), fieldError.getDefaultMessage());
+            vndErrorList.add(vndError);
+        }
+
+        VndErrors vndErrors = new VndErrors(vndErrorList);
+
+        return new ResponseEntity<>(vndErrors, HttpStatus.UNPROCESSABLE_ENTITY);
+
+    }
+ }

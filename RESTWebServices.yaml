@@ -1,0 +1,51 @@
+openapi: 3.0.0
+info: 
+  title: REST Web Services
+  description: Quote of the Day, a simple application that provides a motivational quote from inspirational figures.
+  Code Word of the Day, a simple learning application that produces a coding acronym with it's definition.
+  Magic 8-Ball, a simple fortune-telling/advice seeking game, where the user asks a yes-or-no question and receives an answer in the form of a HttpStatus code response.
+  version: 0.0.1
+servers:
+  - url: 'http://localhost:8080'
+    description: local dev server
+paths:
+  /quote:
+    get:
+      summary: retrieves a random quote in the API
+      responses:
+        '200':
+          description: random quote
+  /word:
+    get:
+      summary: retrieves a random word in the API
+      responses:
+        '200':
+          description: random word
+  /magic:
+    post:
+      summary: user creates answer to the question that was provided by the user
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Answer'
+      responses:
+        '201':
+          description: a question object
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Answer'
+        '400':
+          description: cannot send an empty object
+components:
+  schemas:
+    Answer:
+      properties:
+        answer:
+          type: string
+        question:
+          type: string
+      required: 
+        - question
