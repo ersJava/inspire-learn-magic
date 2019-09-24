@@ -14,12 +14,12 @@ import java.util.Random;
 @RestController
 public class WordAPIController {
 
-    Map<Integer, Word> wdList = new HashMap<>();
+    private Map<Integer, Word> wdList = new HashMap<>();
+    private Random randomNum = new Random();
 
-    @RequestMapping(value = "/word", method = RequestMethod.GET)
-    @ResponseStatus(value = HttpStatus.OK)
-    public Word getWord() {
+    public WordAPIController() {
 
+        wdList.put(0, new Word("JDK", "Java Development Kit, is a software development environment used for developing Java applications and applets. It includes, the Java Runtime Environment (JRE), an interpreter/loader (Java), a compiler (javac), an archiver (jar), a documentation generator (Javadoc) and other tools needed in Java development."));
         wdList.put(1, new Word("DOM", "Document Object Model, is a programming API for HTML and XML documents."));
         wdList.put(2, new Word("API", "Application Program Interface, is a set of routines, protocols, and tools for building software applications."));
         wdList.put(3, new Word("REST", "Representational State Transfer, is a architectural style that specifies constraints, such as the uniform interface that if applied to a web service induce desirable properties, such as performance, scalability, and modifiability, that enable services to work best on the Web."));
@@ -33,11 +33,14 @@ public class WordAPIController {
         wdList.put(11, new Word("JVM", "Java Virtual Machine, is a virtual machine that enables a computer to run Java programs as well as programs written in other languages that are also compiled in Java bytecode."));
         wdList.put(12, new Word("HTML", "Hypertext Markup Language, a standardized system for tagging text files to achieve font, color, graphic, and hyperlink effects on the World Wide Web pages."));
         wdList.put(13, new Word("JRE", "Java RunTime Environment, provides the minimum requirements for executing a Java application; it consists of the Java Virtual Machine (JVM), core classes, and supporting files."));
-        wdList.put(14, new Word("JDK", "Java Development Kit, is a software development environment used for developing Java applications and applets. It includes, the Java Runtime Environment (JRE), an interpreter/loader (Java), a compiler (javac), an archiver (jar), a documentation generator (Javadoc) and other tools needed in Java development."));
+        wdList.put(14, new Word("AAA", "Arrange-Act-Assert, is a pattern for arranging and formatting code in Unit Test methods. Arrange, all necessary preconditions and inputs. Act, on the object or method under test. Assert that the expected results have occurred."));
+    }
 
-        Random randomNum = new Random();
-        int wordNum = randomNum.nextInt(13)+1;
+    @RequestMapping(value = "/word", method = RequestMethod.GET)
+    @ResponseStatus(value = HttpStatus.OK)
+    public Word getWord() {
 
-        return wdList.get(wordNum);
+        return wdList.get(randomNum.nextInt(15));
+
         }
     }
