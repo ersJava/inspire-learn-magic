@@ -8,9 +8,9 @@ Please see YAML for API documentation.
 
 ## Project Details
 
-Quote of the Day, an application that provides a motivational quote from inspirational figures by random.
+Quote of the Day, an application that randomly provides a motivational quote from inspirational figures.
 
-Code Word of the Day, a learning application that produces a coding acronym with it's definition by random.
+Code Word of the Day, a learning application that produces a coding acronym with it's definition randomly.
 
 Magic 8-Ball, a fortune-telling/advice seeking game, where the user asks a yes-or-no question and receives an answer in the form of a HttpStatus code response.
 
