@@ -1,4 +1,15 @@
 button {
-    margin: 8px;
-    font-family: 'Gruppo', cursive;
+    font-family: 'Source Sans Pro', sans-serif
+}
+
+.home {
+    text-align: center;
+}
+
+h1, h2 {
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+p {
+    font-family: 'Source Sans Pro', sans-serif
 }
