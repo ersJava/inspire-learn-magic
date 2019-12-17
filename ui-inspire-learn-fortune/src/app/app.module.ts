@@ -10,6 +10,7 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { InspirePageComponent } from './inspire-page/inspire-page.component';
 import { FortunePageComponent } from './fortune-page/fortune-page.component';
 import { LearnPageComponent } from './learn-page/learn-page.component';
+import { HeaderComponent } from './navigation/header/header.component';
 
 
 @NgModule({
@@ -19,6 +20,7 @@ import { LearnPageComponent } from './learn-page/learn-page.component';
     InspirePageComponent,
     FortunePageComponent,
     LearnPageComponent,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,
