@@ -11,6 +11,7 @@ import { InspirePageComponent } from './inspire-page/inspire-page.component';
 import { FortunePageComponent } from './fortune-page/fortune-page.component';
 import { LearnPageComponent } from './learn-page/learn-page.component';
 import { HeaderComponent } from './navigation/header/header.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { HeaderComponent } from './navigation/header/header.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

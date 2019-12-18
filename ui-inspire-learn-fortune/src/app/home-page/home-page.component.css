@@ -1,5 +1,5 @@
 button {
-    font-family: 'Source Sans Pro', sans-serif
+    font-family: 'Roboto', sans-serif;
 }
 
 .home {
@@ -7,9 +7,13 @@ button {
 }
 
 h1, h2 {
-    font-family: 'Handlee', cursive;
+    font-family: 'Architects Daughter', cursive;
 }
 
 p {
-    font-family: 'Source Sans Pro', sans-serif
+    font-family: 'Roboto', sans-serif;
+}
+
+section {
+    padding-bottom: 36px;
 }

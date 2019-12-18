@@ -1,7 +1,11 @@
 h1, h2 {
-    font-family: 'Handlee', cursive;
+    font-family: 'Architects Daughter', cursive;
 }
 
 p {
-    font-family: 'Source Sans Pro', sans-serif
+    font-family: 'Roboto', sans-serif;
+}
+
+h3 {
+    font-family: 'Bad Script', cursive;
 }
