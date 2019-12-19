@@ -16,9 +16,11 @@ p {
 }
 
 section {
-    padding-bottom: 36px;
+    margin: inherit;
+    
 }
 
-h1 #welcome {
-    font-size: 100px;
+h1 {
+    margin: 70px;
+    font-size: 45px;
 }
