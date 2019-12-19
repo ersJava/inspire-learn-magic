@@ -1,34 +1,33 @@
 <h1 fxLayout="row" fxLayoutAlign="center center">Hello, what would you like to do?</h1>
-<div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="100px" >
-    <section fxLayout="column" fxLayoutAlign="center center">
-            <img mat-card-image src="../../assets/fortune.jpg" width="200px" alt="fortune telling ball">
+
+<div class="home" fxLayout="column" fxLayout.gt-md="row" fxLayoutGap.gt-md="100px" fxLayoutAlign="center center">
+    <section>
+        <img mat-card-image src="../../assets/fortune.jpg" width="200px" alt="fortune telling ball">
         <h2>Fortune</h2>
         <p>Ask the Magic 8 Ball a question?</p>
         <a routerLink="/fortune">
-        <button mat-raised-button color="accent">Fortune
-            <mat-icon>visibility</mat-icon>
-        </button></a>
+            <button mat-fab color="#80DEEA">
+                <mat-icon>visibility</mat-icon>
+            </button></a>
     </section>
-    <section fxLayout="column" fxLayoutAlign="center center">
-            <img mat-card-image src="../../assets/learn.png" width="350px" alt="computer with coding">
+    <section>
+        <img mat-card-image src="../../assets/learn.png" width="350px" alt="computer with coding">
         <h2>Learn</h2>
         <p>Learn Java and coding acryonyms!</p>
         <a routerLink="/learn">
-        <button mat-raised-button color="accent">Learn
+            <button mat-fab color="#80DEEA">
                 <mat-icon>grade</mat-icon>
             </button>
         </a>
     </section>
-    <section fxLayout="column" fxLayoutAlign="center center">
-            <img mat-card-image src="../../assets/inspire.png" width="350px" alt="book of quotes">
+    <section>
+        <img mat-card-image src="../../assets/inspire.png" width="350px" alt="book of quotes">
         <h2>Inspire</h2>
         <p>Get motivational quotes.</p>
         <a routerLink="/inspire">
-        <button mat-raised-button color="accent">Inspire
+            <button mat-fab color="#80DEEA">
                 <mat-icon>favorite_border</mat-icon>
             </button>
         </a>
     </section>
-
-
-
+</div>
