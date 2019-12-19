@@ -17,3 +17,7 @@ p {
 section {
     padding-bottom: 36px;
 }
+
+h1 #welcome {
+    font-size: 100px;
+}
