@@ -1,6 +1,6 @@
-/* Background pattern from Toptal Subtle Patterns */
 
-@import "~@angular/material/prebuilt-themes/purple-green.css";
+
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
 html, body {
     height: 100%;
@@ -8,7 +8,7 @@ html, body {
 
 body {
     margin: 0;
-    /* background-image: url("grey.png");  */
+
   
 }
 
