@@ -1,0 +1,28 @@
+h1, h2, p {
+    font-family: 'Muli', sans-serif;
+}
+
+h1 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 45px;
+}
+
+img {
+    margin-top: 30px;
+}
+
+h3 {
+    font-family: 'Bad Script', cursive;
+    font-size: 20px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.home {
+    text-align: center;
+}
+
+button {
+    background-color: #4DD0E1;
+}
