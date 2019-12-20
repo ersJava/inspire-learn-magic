@@ -10,6 +10,7 @@ import java.util.List;
 import java.util.Random;
 
 @RestController
+@CrossOrigin(origins="http://localhost:4200")
 public class Magic8BallController {
 
     private List<String> response = new ArrayList<String>();
