@@ -13,7 +13,8 @@ img {
 }
 
 h3 {
-    font-family: 'Bad Script', cursive;
+    font-family: 'Major Mono Display', monospace;
+    text-transform: lowercase;
     font-size: 20px;
     margin-left: 80px;
     margin-right: 80px;
