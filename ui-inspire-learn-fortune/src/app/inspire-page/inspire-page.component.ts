@@ -10,9 +10,13 @@ import { InspireService } from '../service/inspire.service';
 })
 export class InspirePageComponent implements OnInit {
 
-  constructor(private route: ActivatedRoute) { }
+  constructor(private route: ActivatedRoute,
+    private service: InspireService) { }
 
   ngOnInit() {
   }
 
+  getInspirationalQuote() {
+    
+  }
 }
