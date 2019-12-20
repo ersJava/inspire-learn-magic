@@ -1,6 +1,5 @@
 package com.company.InspireLearnMagic.controller;
 
-
 import com.company.InspireLearnMagic.model.Quote;
 import com.company.InspireLearnMagic.service.QuoteService;
 import org.springframework.beans.factory.annotation.Autowired;
