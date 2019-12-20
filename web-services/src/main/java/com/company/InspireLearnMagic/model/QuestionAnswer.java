@@ -3,14 +3,14 @@ package com.company.InspireLearnMagic.model;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Size;
 
-public class Answer {
+public class QuestionAnswer {
 
     @Size(min = 10, message= "You must ask a question")
     @NotEmpty(message = "You must ask a question")
     private String question;
     private String answer;
 
-    public Answer() {
+    public QuestionAnswer() {
     }
 
     public String getQuestion() {
