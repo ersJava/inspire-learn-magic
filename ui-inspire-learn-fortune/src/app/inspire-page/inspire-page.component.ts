@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { InspireService } from '../service/inspire.service';
+
 
 @Component({
   selector: 'app-inspire-page',
@@ -7,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InspirePageComponent implements OnInit {
 
-  constructor() { }
+  constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
   }
