@@ -13,7 +13,7 @@ public class QuoteService {
     private static List<Quote> quotes = new ArrayList<>();
     private Random randomNumber = new Random();
 
-    static  {
+    static {
         quotes.add(new Quote("Our only limitations are those we set up in our own minds.", "Napoleon Hill"));
         quotes.add(new Quote("You are never too old, never too bad, never too late, never too sick to start from scratch once again.", "Bikram Choudhury"));
         quotes.add(new Quote("You learn more from failure than from success. Don’t let it stop you. Failure builds character.", "Unknown"));

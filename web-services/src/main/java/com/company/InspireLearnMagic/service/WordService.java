@@ -14,7 +14,6 @@ public class WordService {
     private Random randomNumber = new Random();
 
     static {
-
         words.add(new Word("JDK", "Java Development Kit, is a software development environment used for developing Java applications and applets. It includes, the Java Runtime Environment (JRE), an interpreter/loader (Java), a compiler (javac), an achiever (jar), a documentation generator (Javadoc) and other tools needed in Java development."));
         words.add(new Word("DOM", "Document Object Model, is a programming API for HTML and XML documents."));
         words.add(new Word("API", "Application Program Interface, is a set of routines, protocols, and tools for building software applications."));
@@ -35,5 +34,4 @@ public class WordService {
     public Word randomWordGenerator() {
         return words.get(randomNumber.nextInt(15));
     }
-
 }

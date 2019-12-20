@@ -15,15 +15,12 @@ public class Magic8BallController {
     @Autowired
     private MagicService service;
 
-
     @RequestMapping(value = "/magic", method = RequestMethod.POST)
     @ResponseStatus(value = HttpStatus.CREATED)
     public QuestionAnswer createMagic8BallQA(@RequestBody @Valid QuestionAnswer question){
 
         return service.getResponse(question);
-
     }
-
 }
 
 

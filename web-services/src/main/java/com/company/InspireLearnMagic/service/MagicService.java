@@ -11,7 +11,6 @@ import java.util.Random;
 public class MagicService {
 
     private static List<String> response = new ArrayList<String>();
-
     private Random randomNumber = new Random();
 
     static {
@@ -34,8 +33,5 @@ public class MagicService {
         questionAnswer.setAnswer(response.get(responseSelector));
 
         return questionAnswer;
-
     }
-
-
 }
