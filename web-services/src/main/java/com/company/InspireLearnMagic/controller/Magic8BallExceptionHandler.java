@@ -23,14 +23,11 @@ public class Magic8BallExceptionHandler {
     @ResponseStatus(value = HttpStatus.UNPROCESSABLE_ENTITY)
     public ResponseEntity<VndErrors> questionValidationError (MethodArgumentNotValidException e,
                                                               WebRequest request) {
-
         BindingResult result = e.getBindingResult();
 
-        // don't need a List for one field
         List<FieldError> fieldErrors = result.getFieldErrors();
         List<VndErrors.VndError> vndErrorList = new ArrayList<>();
 
-        // no sense for a for loop with one thing to iterate over...
         for (FieldError fieldError : fieldErrors) {
             VndErrors.VndError vndError = new VndErrors.VndError(request.toString(), fieldError.getDefaultMessage());
             vndErrorList.add(vndError);
@@ -39,6 +36,5 @@ public class Magic8BallExceptionHandler {
         VndErrors vndErrors = new VndErrors(vndErrorList);
 
         return new ResponseEntity<>(vndErrors, HttpStatus.UNPROCESSABLE_ENTITY);
-
     }
  }

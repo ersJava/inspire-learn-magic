@@ -19,6 +19,5 @@ public class QuoteAPIController {
     public Quote getInspirationalQuote(){
 
         return service.randomQuoteGenerator();
-
     }
 }
