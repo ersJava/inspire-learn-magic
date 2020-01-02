@@ -17,6 +17,6 @@ export class InspirePageComponent implements OnInit {
   }
 
   getInspirationalQuote() {
-    
+    this.service.executeInspireService().subscribe()
   }
 }
