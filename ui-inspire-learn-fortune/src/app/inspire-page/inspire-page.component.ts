@@ -9,6 +9,8 @@ import { InspireService } from '../service/inspire.service';
 })
 export class InspirePageComponent implements OnInit {
 
+  quoteFromService: string
+
   constructor(private route: ActivatedRoute,
     private service: InspireService) { }
 
@@ -26,8 +28,7 @@ export class InspirePageComponent implements OnInit {
   }
 
   handleSuccessfulResponse(response){
-    console.log(response);
-    console.log(response.quote);
+   this.quoteFromService = response.quote
   }
 
 }

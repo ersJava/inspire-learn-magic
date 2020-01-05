@@ -1,14 +1,14 @@
 <div class="home" fxLayout="column" fxLayoutAlign="center center">
-    <>
+    <section>
         <img mat-card-image src="../../assets/inspire.png" width="460px" alt="book of quotes">
         <h1 fxLayout="row" fxLayoutAlign="center center">Inspire</h1>
         <p>Click the heart to get your inspirational quote.</p>
             <button (click)="getInspirationalQuote()" mat-fab color="#4DD0E1">
                 <mat-icon>favorite_border</mat-icon>
             </button>
-       <div>
-           <h3>Quote:</h3>{{}}
-           <h3>Author:</h3>{{}}
+       <div *ngIf="quoteFromService">
+           <h3>"{{quoteFromService}}"</h3>
+           <!-- <h3>Author:</h3>{{}} -->
        </div>
     </section>
 </div>
