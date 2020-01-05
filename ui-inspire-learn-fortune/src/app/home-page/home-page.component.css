@@ -5,6 +5,7 @@ button {
 
 .home {
     text-align: center;
+    margin-bottom: 30px;
 }
 
 h1, h2, p {
@@ -12,7 +13,7 @@ h1, h2, p {
 }
 
 section {
-    margin: inherit;    
+    margin: inherit;
 }
 
 h1 {
@@ -20,3 +21,4 @@ h1 {
     margin-bottom: 70px;
     font-size: 45px;
 }
+

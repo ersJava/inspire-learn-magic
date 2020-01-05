@@ -34,9 +34,6 @@ export class InspirePageComponent implements OnInit {
 
   handleSuccessfulResponse(response){
    this.quoteFromService = response
-  //  this.quoteFromService = response.author
-  //  console.log(response.author)
-  //  console.log(response.quote)
   }
 
 }
