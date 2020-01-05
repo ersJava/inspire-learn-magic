@@ -7,8 +7,8 @@
                 <mat-icon>favorite_border</mat-icon>
             </button>
        <div *ngIf="quoteFromService">
-           <h3>"{{quoteFromService}}"</h3>
-           <!-- <h3>Author:</h3>{{}} -->
+           <h3>"{{quoteFromService.quote}}"</h3>
+           <h3>- {{quoteFromService.author}}</h3>
        </div>
     </section>
 </div>

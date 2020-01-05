@@ -2,6 +2,13 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { InspireService } from '../service/inspire.service';
 
+export class InspireBean {
+  constructor(
+    public quote: string, 
+    public author: string) {
+  }
+}
+
 @Component({
   selector: 'app-inspire-page',
   templateUrl: './inspire-page.component.html',
@@ -9,7 +16,7 @@ import { InspireService } from '../service/inspire.service';
 })
 export class InspirePageComponent implements OnInit {
 
-  quoteFromService: string
+  quoteFromService: InspireBean[]
 
   constructor(private route: ActivatedRoute,
     private service: InspireService) { }
@@ -23,12 +30,13 @@ export class InspirePageComponent implements OnInit {
     this.service.executeInspireService().subscribe(
       response => this.handleSuccessfulResponse(response)
     );
-
-    console.log('last line of getIn')
   }
 
   handleSuccessfulResponse(response){
-   this.quoteFromService = response.quote
+   this.quoteFromService = response
+  //  this.quoteFromService = response.author
+  //  console.log(response.author)
+  //  console.log(response.quote)
   }
 
 }
