@@ -17,3 +17,5 @@ Magic 8-Ball, a fortune-telling/advice seeking game, where the user asks a yes-o
 ### Technologies Used
 * Java
 * Spring Boot
+* Angular
+* TypeScript
