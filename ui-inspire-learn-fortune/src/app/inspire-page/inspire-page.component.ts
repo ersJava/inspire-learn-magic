@@ -25,8 +25,6 @@ export class InspirePageComponent implements OnInit {
   }
 
   getInspirationalQuote() {
-    console.log(this.service.executeInspireService());
-
     this.service.executeInspireService().subscribe(
       response => this.handleSuccessfulResponse(response)
     );

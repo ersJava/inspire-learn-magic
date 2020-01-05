@@ -3,10 +3,12 @@
             <img mat-card-image src="../../assets/learn.png" width="460px" alt="computer with code">
             <h1 fxLayout="row" fxLayoutAlign="center center">Learn</h1>
             <p>Click the button to get your coding acryonym.</p>
-                <button mat-fab color="#4DD0E1">
+                <button (click)="getWordDefinition()" mat-fab color="#4DD0E1">
                     <mat-icon>developer_board</mat-icon>
                 </button>
-            <h3>Word: REST</h3>
-            <h3>Definition: Representational State Transfer, is a architectural style that specifies constraints, such as the uniform interface that if applied to a web service induce desirable properties, such as performance, scalability, and modifiability, that enable services to work best on the Web.</h3>
+                <div *ngIf="wordFromService">
+                    <h3>Word: {{wordFromService.word}}</h3>
+                    <h3>Definition: {{wordFromService.definition}}</h3>
+                </div>
         </section>
     </div>

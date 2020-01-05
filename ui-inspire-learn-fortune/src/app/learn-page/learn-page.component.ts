@@ -16,9 +16,22 @@ export class LearnBean {
 })
 export class LearnPageComponent implements OnInit {
 
-  constructor() { }
+  wordFromService: LearnBean[]
+
+  constructor(private route: ActivatedRoute,
+    private service: LearnService) { }
 
   ngOnInit() {
+  }
+
+  getWordDefinition() {
+    this.service.executeLearnService().subscribe(
+      response => this.handleSuccessfulResponse(response)
+    );
+  }
+
+  handleSuccessfulResponse(response){
+    this.wordFromService = response
   }
 
 }
