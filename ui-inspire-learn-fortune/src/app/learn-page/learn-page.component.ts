@@ -1,4 +1,13 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { LearnService } from '../service/learn.service';
+
+export class LearnBean {
+  constructor(
+    public word: string,
+    public definition: string) {
+  }
+}
 
 @Component({
   selector: 'app-learn-page',
