@@ -10,9 +10,9 @@ Please see YAML for API documentation.
 
 Inspire. An application that randomly provides a motivational quote from inspirational figures.
 
-Learn. A learning application that produces a coding acronym with it's definition randomly.
+Learn. A learning application that randomly produces a coding acronym with it's definition.
 
-Magic. A fortune-telling/advice seeking game where the user asks a yes-or-no question to the crystal ball and receives a response in the form of a HttpStatus code.
+Magic. A fortune-telling game where the user asks a yes-or-no question to the crystal ball and receives a response in the form of a HttpStatus code.
 
 ### Technologies Used
 * Java
