@@ -12,7 +12,7 @@ Quote of the Day, an application that randomly provides a motivational quote fro
 
 Code Word of the Day, a learning application that produces a coding acronym with it's definition randomly.
 
-Magic 8-Ball, a fortune-telling/advice seeking game, where the user asks a yes-or-no question and receives an answer in the form of a HttpStatus code response.
+Ask the Crystal Ball, a fortune-telling/advice seeking game, where the user asks a yes-or-no question and receives an answer in the form of a HttpStatus code response.
 
 ### Technologies Used
 * Java
