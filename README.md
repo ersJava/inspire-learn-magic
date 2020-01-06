@@ -1,5 +1,7 @@
 # Inspire. Learn. Magic
 
+Three fun web services. Inspire, generates a motivational quote. Learn, produces a coding acronym with its definition.  Magic, a fortune-telling game.
+
 ## How It Works
 
 Inspire. An application that randomly provides a motivational quote from an inspirational figure.
