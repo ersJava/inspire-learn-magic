@@ -4,6 +4,8 @@ Three fun web services. Inspire, generates a motivational quote. Learn, produces
 
 ## How It Works
 
+![intro screenshot](/images/main.png)
+
 Inspire. An application that randomly provides a motivational quote from an inspirational figure.
 
 Learn. A learning application that randomly produces a coding acronym with its definition.
