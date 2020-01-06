@@ -1,6 +1,6 @@
 # Inspire. Learn. Magic
 
-Three fun web services. Inspire, generates a motivational quote. Learn, produces a coding acronym with its definition.  Magic, a fortune-telling game.
+Three fun web services. Inspire, generates a motivational quote. Learn, produces a coding acronym with its definition.  Fortune, a fortune-telling game.
 
 ## How It Works
 
@@ -12,8 +12,10 @@ Inspire. An application that randomly provides a motivational quote from an insp
 <img src="https://github.com/ersJava/inspire-learn-magic/blob/master/images/inspire-screenshot.png" width="750px" height="400px">
 
 Learn. A learning application that randomly produces a coding acronym with its definition.
+<img src="https://github.com/ersJava/inspire-learn-magic/blob/master/images/learn-screenshot.png" width="750px" height="400px">
 
-Magic. A fortune-telling game where the user asks a yes-or-no question to the crystal ball and receives a response in the form of a HttpStatus code.
+Fortune. A fortune-telling game where the user asks a yes-or-no question to the crystal ball and receives a response in the form of a HttpStatus code.
+<img src="https://github.com/ersJava/inspire-learn-magic/blob/master/images/fortune-screenshot.png" width="750px" height="400px">
 
 ## Project Details
 
