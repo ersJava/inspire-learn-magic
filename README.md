@@ -4,7 +4,7 @@ Three fun web services. Inspire, generates a motivational quote. Learn, produces
 
 ## How It Works
 
-![intro screenshot](/images/main.png)
+![intro screenshot](/images/main-screenshot.png)
 
 Inspire. An application that randomly provides a motivational quote from an inspirational figure.
 
