@@ -15,5 +15,4 @@ export class InspireService {
   executeInspireService(){
     return this.http.get<InspireBean>('http://localhost:8080/quote');
 }  
-  
 }
