@@ -8,7 +8,7 @@ Three fun web services. Inspire, generates a motivational quote. Learn, produces
 
 <br>
 
-Inspire. An application that randomly provides a motivational quote from an inspirational figure.
+Inspire. An application that randomly provides a motivational quote by an inspirational figure.
 <img src="https://github.com/ersJava/inspire-learn-magic/blob/master/images/inspire-screenshot.png" width="750px" height="400px">
 
 Learn. A learning application that randomly produces a coding acronym with its definition.
