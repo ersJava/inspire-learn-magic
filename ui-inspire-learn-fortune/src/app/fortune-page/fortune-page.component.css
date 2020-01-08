@@ -37,4 +37,8 @@ button {
   .question-container-width {
     width: 100%;
   }
-  
+ 
+  .mat-form-field {
+    font-family: 'Major Mono Display', monospace;
+    text-transform: lowercase;
+}
