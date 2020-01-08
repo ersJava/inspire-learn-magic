@@ -11,8 +11,8 @@ export class FortuneService {
     private http: HttpClient
   ) { }
 
-  executeFortuneService(answer) {
-    return this.http.post<FortuneBean>('http://localhost:8080/magic', answer);
+  executeFortuneService(question) {
+    return this.http.post<FortuneBean>('http://localhost:8080/magic', question);
   }
 
 }
