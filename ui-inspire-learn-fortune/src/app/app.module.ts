@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,7 +12,6 @@ import { InspirePageComponent } from './inspire-page/inspire-page.component';
 import { FortunePageComponent } from './fortune-page/fortune-page.component';
 import { LearnPageComponent } from './learn-page/learn-page.component';
 import { HeaderComponent } from './navigation/header/header.component';
-import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -29,7 +29,7 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserAnimationsModule,
     MaterialModule,
     FlexLayoutModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

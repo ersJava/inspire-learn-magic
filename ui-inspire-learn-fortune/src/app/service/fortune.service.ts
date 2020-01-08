@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { FortuneBean } from '../fortune-page/fortune-page.component';
+// import { FortuneBean } from '../fortune-page/fortune-page.component';
 import { HttpClient } from '@angular/common/http';
 
 @Injectable({
@@ -12,7 +12,7 @@ export class FortuneService {
   ) { }
 
   executeFortuneService(question) {
-    return this.http.post<FortuneBean>('http://localhost:8080/magic', question);
+    return this.http.post('http://localhost:8080/magic', question);
   }
 
 }
