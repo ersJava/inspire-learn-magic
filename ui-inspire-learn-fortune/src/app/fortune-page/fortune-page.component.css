@@ -28,17 +28,24 @@ button {
     background-color: #4DD0E1;
 }
 
-.question-container {
-    min-width: 150px;
-    max-width: 500px;
+.example-form {
+    margin-top: 25px;
     width: 100%;
+    background-color:#4DD0E1;
+    
   }
   
-  .question-container-width {
+  .example-full-width {
     width: 100%;
+    
   }
- 
+
   .mat-form-field {
-    font-family: 'Major Mono Display', monospace;
+    font-family:'Major Mono Display', monospace;
     text-transform: lowercase;
+    text-align: center;
+}
+
+.mat-input-element {
+    caret-color: #673ab7;
 }
