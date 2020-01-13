@@ -17,7 +17,7 @@ public class Magic8BallController {
 
     @RequestMapping(value = "/magic", method = RequestMethod.POST)
     @ResponseStatus(value = HttpStatus.CREATED)
-    public QuestionAnswer createMagic8BallQA(@RequestBody @Valid QuestionAnswer question){
+    public QuestionAnswer createMagic8BallQA(@RequestBody @Valid String question){
 
         return service.getResponse(question);
     }

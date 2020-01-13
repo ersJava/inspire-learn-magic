@@ -3,15 +3,15 @@
         <img mat-card-image src="../../assets/fortune1.png" width="238px" alt="fortune teller globe">
         <h1 fxLayout="row" fxLayoutAlign="center center">Fortune</h1>
         <p>Ask the Crystal Ball a question and GET a response in the form of a HTTP status code.</p>
-        <button mat-fab color="#4DD0E1">
+        <button (click)="getResponseFromCrystalBall()" mat-fab color="#4DD0E1">
             <mat-icon>question_answer</mat-icon>
         </button>
         <form class="question-container">
             <mat-form-field class="question-container-width">
-                <input matInput placeholder="Question">
+                <input matInput placeholder="Question" [ngModel]="responseWithQuestion.question">
             </mat-form-field>
         </form>
-            <!-- <h3>Question:{{responseWithQuestion.question}}</h3>
-            <h3>Answer:{{responseWithQuestion.answer}}</h3> -->
+        <div>{{responseWithQuestion.question}}</div>
+        <div>{{responseWithQuestion.answer}}</div>
     </section>
 </div>

@@ -16,20 +16,24 @@ export class FortuneBean {
 })
 export class FortunePageComponent implements OnInit {
 
-  responseWithQuestion: FortuneBean
+  question: string
+  responseWithQuestion: FortuneBean[]
 
   constructor(private route: ActivatedRoute,
     private service: FortuneService) { }
 
   ngOnInit() {
-
-    // this.responseWithQuestion = this.route.snapshot.params['question'];
   }
 
   getResponseFromCrystalBall() {
-    this.service.executeFortuneService(this.responseWithQuestion).subscribe(     
+    this.service.executeFortuneService(this.question).subscribe(     
       response => this.handleSuccessfulResponse(response)
     );
+
+
+    console.log("is this logging")
+
+
   }
 
   handleSuccessfulResponse(response){
