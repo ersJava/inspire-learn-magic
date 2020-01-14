@@ -6,13 +6,15 @@
         <button (click)="getResponseFromCrystalBall()" mat-fab color="#4DD0E1">
             <mat-icon>question_answer</mat-icon>
         </button>
-
-
         <form class="question-form">
             <mat-form-field class="question-full-width">
-                <input matInput placeholder="Ask A Question">
+                <input matInput placeholder="Ask A Question" type="text" [(ngModel)]="responseWithQuestion.question" [ngModelOptions]="{standalone: true}">
             </mat-form-field>
         </form>
 
+        <div *ngIf="responseWithQuestion">
+                <h3>Question: {{responseWithQuestion.question}}"</h3>
+                <h3>Response: {{responseWithQuestion.answer}}</h3>
+            </div>
     </section>
 </div>

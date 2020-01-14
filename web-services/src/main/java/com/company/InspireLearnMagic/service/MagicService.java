@@ -24,10 +24,10 @@ public class MagicService {
         response.add("Magic 8 Ball Timeout");
     }
 
-    public QuestionAnswer getResponse(String question){
+    public QuestionAnswer getResponse(QuestionAnswer question){
 
         QuestionAnswer questionAnswer = new QuestionAnswer();
-        questionAnswer.setQuestion(question);
+        questionAnswer.setQuestion(question.getQuestion());
 
         int responseSelector = randomNumber.nextInt(8);
         questionAnswer.setAnswer(response.get(responseSelector));
