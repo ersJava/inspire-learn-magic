@@ -1,51 +1,53 @@
-h1, h2, p {
-    font-family: 'Muli', sans-serif;
+h1,
+h2,
+p {
+  font-family: 'Muli', sans-serif;
 }
 
 h1 {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    font-size: 45px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 45px;
 }
 
 img {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 h3 {
-    font-family: 'Major Mono Display', monospace;
-    text-transform: lowercase;
-    font-size: 20px;
-    margin-left: 80px;
-    margin-right: 80px;
+  font-family: 'Major Mono Display', monospace;
+  text-transform: lowercase;
+  font-size: 20px;
+  margin-left: 80px;
+  margin-right: 80px;
 }
 
 .home {
-    text-align: center;
+  text-align: center;
 }
 
 button {
-    background-color: #4DD0E1;
+  background-color: #4DD0E1;
 }
 
-.example-form {
-    margin-top: 25px;
-    width: 100%;
-    background-color:#4DD0E1;
-    
-  }
-  
-  .example-full-width {
-    width: 100%;
-    
-  }
+.question-form {
+  margin-top: 25px;
+  width: 100%;
+  background-color: #4DD0E1;
 
-  .mat-form-field {
-    font-family:'Major Mono Display', monospace;
-    text-transform: lowercase;
-    text-align: center;
+}
+
+.question-full-width {
+  width: 100%;
+
+}
+
+.mat-form-field {
+  font-family: 'Major Mono Display', monospace;
+  text-transform: lowercase;
+  text-align: center;
 }
 
 .mat-input-element {
-    caret-color: #673ab7;
+  caret-color: #673ab7;
 }
