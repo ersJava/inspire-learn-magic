@@ -25,7 +25,6 @@ Please see YAML for API documentation.
 
 ### Technologies Used
 * Java
-* Spring Boot
 * Angular
 * TypeScript
 * Material Design
