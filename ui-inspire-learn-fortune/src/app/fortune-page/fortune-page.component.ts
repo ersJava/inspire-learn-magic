@@ -17,7 +17,7 @@ export class FortuneBean {
 export class FortunePageComponent implements OnInit {
 
   responseWithQuestion: FortuneBean
-  question: string
+
 
   constructor(private route: ActivatedRoute,
     private service: FortuneService) { }
@@ -38,9 +38,9 @@ export class FortunePageComponent implements OnInit {
   // }
 
   getResponseFromCrystalBall() {
-    this.service.executeFortuneService(this.question)
+    this.service.executeFortuneService(this.responseWithQuestion)
     .subscribe(
-      data => {
+      (data: FortuneBean) => {
         console.log(data)
       }
     )
